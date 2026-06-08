@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Kumar Sharma - Interior Product Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-red: #E30613;
+            --dark-gray: #1A1A1A;
+            --light-bg: #F4F4F6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, var(--primary-red) 70%, var(--dark-gray) 70%);
+            height: 120px;
+            position: relative;
+        }
+
+        .logo-placeholder {
+            width: 90px;
+            height: 90px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: var(--primary-red);
+        }
+
+        .profile-info {
+            padding: 60px 24px 24px 24px;
+        }
+
+        .profile-info h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-gray);
+            letter-spacing: 0.5px;
+        }
+
+        .profile-info p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-top: 4px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .company-name {
+            color: var(--primary-red) !important;
+            font-size: 1rem;
+            margin-top: 8px !important;
+        }
+
+        .contact-buttons {
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 14px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .action-btn:hover {
+            background: #edf2f7;
+            transform: translateY(-2px);
+        }
+
+        .action-btn i {
+            font-size: 1.2rem;
+            width: 35px;
+            color: var(--primary-red);
+        }
+
+        .action-btn .btn-text {
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .action-btn .btn-text span {
+            display: block;
+            font-size: 0.75rem;
+            color: #888;
+        }
+
+        .save-btn {
+            background: var(--primary-red);
+            color: white;
+            justify-content: center;
+            font-weight: 600;
+            margin: 24px;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(227, 6, 19, 0.3);
+        }
+
+        .save-btn:hover {
+            background: #c20510;
+            color: white;
+        }
+
+        .save-btn i {
+            color: white;
+            margin-right: 8px;
+            width: auto;
+        }
+
+        .footer {
+            background: var(--dark-gray);
+            color: #888;
+            padding: 16px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="header-banner">
+            <div class="logo-placeholder">
+                <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <h1>Manoj Kumar Sharma</h1>
+            <p>Interior Designer</p>
+            <p class="company-name">Interior Product Services</p>
+        </div>
+
+        <div class="contact-buttons">
+            <a href="tel:+918897478535" class="action-btn">
+                <i class="fa-solid fa-phone"></i>
+                <div class="btn-text">
+                    <span>Call Mobile</span>
+                    +91 88974 78535
+                </div>
+            </a>
+
+            <a href="mailto:manoj.hyd.sharma@gmail.com" class="action-btn">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="btn-text">
+                    <span>Email Address</span>
+                    manoj.hyd.sharma@gmail.com
+                </div>
+            </a>
+
+            <a href="https://maps.app.goo.gl/E36p2JMA8RvZz25J6" target="_blank" class="action-btn">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="btn-text">
+                    <span>Office Location</span>
+                    Flat No B-5, Shaikpet Darga HS, Gachibowli
+                </div>
+            </a>
+        </div>
+
+        <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ASharma%3BManoj%3BKumar%3B%3B%0AFN%3AManoj%20Kumar%20Sharma%0AORG%3AInterior%20Product%20Services%0ATITLE%3AInterior%20Designer%0ATEL%3BTYPE%3DCELL%3A%2B918897478535%0AEMAIL%3BTYPE%3DPREF%2CINTERNET%3Amanoj.hyd.sharma%40gmail.com%0AADR%3BTYPE%3DWORK%3A%3B%3BFlat%20No%20B-5%2C%20Shaikpet%20Darga%20HS%3BGachibowli%3BHyderabad%3BTelangana%3B500008%3BIndia%0AEND%3AVCARD" download="Manoj_Kumar_Sharma.vcf" class="action-btn save-btn">
+            <i class="fa-solid fa-user-plus"></i> Save Contact to Phone
+        </a>
+
+        <div class="footer">
+            © 2026 Interior Product Services
+        </div>
+    </div>
+
+</body>
+</html>
